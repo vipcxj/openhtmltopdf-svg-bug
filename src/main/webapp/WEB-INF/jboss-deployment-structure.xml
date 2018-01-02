@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+    <deployment>
+        <!--        <exclude-subsystems>
+            <subsystem name="jaxrs"/>
+            <subsystem name="resteasy"/>
+            <subsystem name="hibernate"/>
+        </exclude-subsystems>-->
+        <dependencies>  
+            <module name="org.bouncycastle" slot="main" export="true"/>
+            <module name="org.infinispan" slot="ispn-9.1" export="true"/>
+            <module name="org.apache.xalan"/>
+            <module name="org.jboss.resteasy.resteasy-jaxrs" slot="main" export="true"/>
+            <module name="org.jboss.resteasy.resteasy-multipart-provider" slot="main" export="true"/>
+            <module name="org.jboss.resteasy.resteasy-jaxb-provider" slot="main" export="true"/>
+            <system export="true">
+                <paths>  
+                    <path name="sun/security/rsa"/>
+                    <path name="com/sun/org/apache/xml/internal/serializer"/>
+                    <path name="com/sun/org/apache/xml/internal/dtm"/>
+                    <path name="com/sun/org/apache/xalan/internal/xsltc"/>
+                    <path name="com/sun/org/apache/xalan/internal/xsltc/trax"/>
+                    <path name="com/sun/org/apache/xalan/internal/xsltc/dom"/>
+                    <path name="com/sun/org/apache/xalan/internal/xsltc/runtime"/>
+                </paths>  
+            </system>  
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>
