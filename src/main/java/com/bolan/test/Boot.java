@@ -30,7 +30,7 @@ public class Boot {
             e.printStackTrace();
             return;
         }
-        builder.useFont(new FSSupplier<InputStream>() {
+/*        builder.useFont(new FSSupplier<InputStream>() {
             @Override
             public InputStream supply() {
                 return getClass().getResourceAsStream("/fonts/FangSong.ttf");
@@ -65,7 +65,7 @@ public class Boot {
             public InputStream supply() {
                 return getClass().getResourceAsStream("/fonts/XingSu.ttf");
             }
-        }, "XingSu");
+        }, "XingSu");*/
         builder.defaultTextDirection(PdfRendererBuilder.TextDirection.LTR);
         builder.useSVGDrawer(new BatikSVGDrawer());
         // builder.withHtmlContent(IOUtils.toString(getClass().getResourceAsStream("/svg.html"), "UTF-8"), "/");
