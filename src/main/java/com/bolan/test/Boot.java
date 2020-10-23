@@ -1,6 +1,5 @@
 package com.bolan.test;
 
-import com.openhtmltopdf.extend.FSSupplier;
 import com.openhtmltopdf.pdfboxout.PdfRendererBuilder;
 import com.openhtmltopdf.svgsupport.BatikSVGDrawer;
 import org.apache.commons.io.IOUtils;
@@ -9,7 +8,9 @@ import org.jsoup.parser.ParseSettings;
 import javax.annotation.PostConstruct;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 
 /**
  * Created by vipcxj on 2018/1/2.
